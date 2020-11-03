@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <TopBar msg="Quizzes with Vue"/>
-    <selection-area></selection-area>
-    <score-area></score-area>
+    <router-view name="top"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import TopBar from './components/TopBar.vue'
-import SelectionArea from './components/SelectionArea.vue'
-import ScoreArea from './components/ScoreArea.vue'
+
 
 export default {
   name: 'App',
   components: {
-    TopBar,
-    SelectionArea,
-    ScoreArea
+
   }
 }
+
 </script>
 
 <style>

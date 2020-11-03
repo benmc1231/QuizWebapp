@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Quizzes with Vue</h1>
     <h3>Ben McLean</h3>
     <p id="date">{{currentDate}}</p>
     <a href="https://www.linkedin.com/in/ben-mclean-45806315b/"><img id="ProfilePicture" alt="My profile picture" 

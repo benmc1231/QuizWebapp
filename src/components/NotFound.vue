@@ -1,8 +1,9 @@
 <template>
     <div>
-        <h1>404 Not Found <a href="/">Navigate back</a></h1>
+        <ul>
+            <h1>404 Not Found <a href="/">Navigate back</a></h1>
+        </ul>
     </div>
-
 </template>
 
 <script>
@@ -13,5 +14,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <ul id="quizList">
         <button v-on:click="enterQuiz('General')">General knowledge</button><br>
         <button v-on:click="enterQuiz('History')">History</button><br>
@@ -8,7 +8,15 @@
         <button v-on:click="enterQuiz('Music')">Music</button><br>
         <button v-on:click="enterQuiz('Science')">Science and Nature</button><br>
     </ul>
-    <router-view></router-view>
+        <div id = "scoreArea">
+        <p id="score">0/10</p>
+        <p id="score">0/10</p>
+        <p id="score">0/10</p>
+        <p id="score">0/10</p>
+        <p id="score">0/10</p>
+        <p id="score">0/10</p>
+
+    </div> 
   </div>
 </template>
 
@@ -28,26 +36,30 @@ export default {
     enterQuiz: function(quiz){
       if (quiz == 'General'){
         console.log("General")
-        this.$router.push('/quiz')       }
+        this.$router.push('/quiz')
+        }
       if (quiz=='History'){
         console.log("History")
-
+        this.$router.push('/quiz')
       }
       if (quiz=='Politics'){
         console.log("Politics")
+        this.$router.push('/quiz')
       }
       if (quiz=='Vehicles'){
         console.log("Vehicles")
+        this.$router.push('/quiz')
       }
       if (quiz=='Music'){
         console.log("Music")
+        this.$router.push('/quiz')
       }
       if (quiz=='Science'){
         console.log("Science")
+        this.$router.push('/quiz')
       }
+    }
 
-    }     
-    
   }
 }
 </script>
@@ -69,6 +81,24 @@ export default {
 button{
   font-size:190%;
   width: 100%
+}
+#score{
+    font-size:190%;
+    margin: 6px;
+    color: black;
+}
+#scoreArea{
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: grey;
+    width: 10%;
+    height: 42%;
+    left: 60%;
+    top: 31.6%;
+    padding: 0;
+    position: fixed;     
+    float: center;
+    overflow: auto;
 }
 
 </style>

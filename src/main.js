@@ -4,6 +4,9 @@ import axios from 'axios'
 import VueRouter from 'vue-router'
 import NotFound from "./components/NotFound"
 import QuizPage from "./components/QuizPage"
+import TopBar from "./components/TopBar"
+import SelectionArea from "./components/SelectionArea"
+
 
 Vue.use(VueRouter);
 
@@ -11,12 +14,13 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
   routes: [
-    {path: '/', component: App},
-    {path: '/quiz', component: QuizPage},
+    {path: '/', components: {top: TopBar, default: SelectionArea}},
+    {path: '/quiz', components: {default: QuizPage, top: TopBar}},
     {path: '*', component: NotFound},
   ],
   mode: 'history'
 });
+
 
 new Vue({
   router,

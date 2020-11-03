@@ -35,28 +35,22 @@ export default {
   methods:{
     enterQuiz: function(quiz){
       if (quiz == 'General'){
-        console.log("General")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/General')
         }
       if (quiz=='History'){
-        console.log("History")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/History')
       }
       if (quiz=='Politics'){
-        console.log("Politics")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/Politics')
       }
       if (quiz=='Vehicles'){
-        console.log("Vehicles")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/Vehicles')
       }
       if (quiz=='Music'){
-        console.log("Music")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/Music')
       }
       if (quiz=='Science'){
-        console.log("Science")
-        this.$router.push('/quiz')
+        this.$router.push('/quiz/Science')
       }
     }
 

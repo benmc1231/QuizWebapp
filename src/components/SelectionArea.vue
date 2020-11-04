@@ -75,12 +75,14 @@ export default {
 }
 button{
   font-size:190%;
-  width: 100%
+  width: 100%;
+  height: 16.5%;
 }
 #score{
     font-size:190%;
     margin: 6px;
     color: black;
+    height: 14%;
 }
 #scoreArea{
     border-collapse: collapse;

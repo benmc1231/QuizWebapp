@@ -8,14 +8,13 @@
         <button v-on:click="enterQuiz('Music')">Music</button><br>
         <button v-on:click="enterQuiz('Science')">Science and Nature</button><br>
     </ul>
-        <div id = "scoreArea">
-        <p id="score">0/10</p>
-        <p id="score">0/10</p>
-        <p id="score">0/10</p>
-        <p id="score">0/10</p>
-        <p id="score">0/10</p>
-        <p id="score">0/10</p>
-
+    <div id = "scoreArea">
+    <p id="score">0/10</p>
+    <p id="score">0/10</p>
+    <p id="score">0/10</p>
+    <p id="score">0/10</p>
+    <p id="score">0/10</p>
+    <p id="score">0/10</p>
     </div> 
   </div>
 </template>
@@ -26,6 +25,8 @@ export default {
   name: 'SelectionArea',
   components: {
     
+  },
+  props: {
   },
   data: function(){
     return{

@@ -4,8 +4,6 @@
     <h3>Ben McLean</h3>
     <p id="date">{{currentDate}}</p>
     <p id="beat">Try beat your top score...</p>
-    <a href="https://www.linkedin.com/in/ben-mclean-45806315b/"><img id="ProfilePicture" alt="My profile picture" 
-    src="https://media-exp1.licdn.com/dms/image/C5603AQFNXX9MGmQa1A/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=DrDWSd5OXGMshn2EyLGQlwzyDQZoSdD7oAb8BfpGkfo"></a>
     <address>
       Contact me:<br>
       0405596633<br>

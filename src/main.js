@@ -14,7 +14,6 @@ Vue.config.productionTip = false
 const router = new VueRouter({
   routes: [
     {path: '/', components: {default: SelectionArea, top: TopBar}},
-    {path: '/:score', components: {default: SelectionArea, top: TopBar}},
     {path: '/quiz/:id', components: {default: QuizPage, top: TopBar}},
     {path: '*', component: NotFound},
   ],

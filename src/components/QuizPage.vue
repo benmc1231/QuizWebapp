@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Welcome to the quiz page</h1>
-        <!--Need to make this quizName take Correct and put it in SelectionArea.vue-->
+        <!--Need to make this quizName take Correct score and put it in SelectionArea.vue-->
         <router-link to="/"><button id="homeB">Click for Home</button></router-link>
         <ul id="quizList">
             <p id="quizName">{{$route.params.id}}</p>
